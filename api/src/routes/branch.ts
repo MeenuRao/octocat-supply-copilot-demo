@@ -102,6 +102,7 @@
 import express from 'express';
 import { Branch } from '../models/branch';
 import { branches as seedBranches } from '../seedData';
+import { authenticateToken } from '../middleware/authMiddleware';
 
 const router = express.Router();
 
